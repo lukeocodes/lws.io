@@ -15,6 +15,13 @@ export default {
     const presentations = await $content('presentations').sortBy('latest', 'desc').limit(3).fetch()
     const articles = await $content('articles').sortBy('published', 'desc').limit(3).fetch()
     return { presentations, articles }
+  },
+  head () {
+    return {
+      meta: [
+        { property: 'og:image', content: 'https://lws-io.netlify.app/api/og/template=main/title=Kevin Lewis - Developer Advocate & Event Organizer' }
+      ]
+    }
   }
 }
 </script>

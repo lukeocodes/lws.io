@@ -17,7 +17,10 @@ export default {
   },
   head () {
     return {
-      title: 'Presentations - Kevin Lewis'
+      title: 'Presentations - Kevin Lewis',
+      meta: [
+        { property: 'og:image', content: `https://lws-io.netlify.app/api/og/template=presentation/title=${this.presentation.title}` }
+      ]
     }
   }
 }

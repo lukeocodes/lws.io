@@ -45,6 +45,18 @@ export default {
 }
 </script>
 
+<script>
+export default {
+  head() {
+    return {
+      meta: [
+          { property: 'og:image', content: `https://lws-io.netlify.app/api/og/template=main/title=About Kevin` }
+      ]
+    }
+  }
+}
+</script>
+
 <style lang="postcss">
   .prose a {
     color: inherit !important;

@@ -51,7 +51,8 @@ export default {
     return {
       title: `${this.article.title} - Kevin Lewis`,
       meta: [
-        { hid: 'description', name: 'description', content: this.article.description }
+        { hid: 'description', name: 'description', content: this.article.description },
+        { property: 'og:image', content: `https://lws-io.netlify.app/api/og/template=article/title=${this.article.title}` }
       ]
     }
   }

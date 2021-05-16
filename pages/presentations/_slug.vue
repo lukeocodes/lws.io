@@ -76,7 +76,8 @@ export default {
     return {
       title: `${this.presentation.title} - Kevin Lewis`,
       meta: [
-        { hid: 'description', name: 'description', content: this.presentation.description }
+        { hid: 'description', name: 'description', content: this.presentation.description },
+        { property: 'og:image', content: `https://lws-io.netlify.app/api/og/template=presentation/title=${this.presentation.title}` }
       ]
     }
   }
