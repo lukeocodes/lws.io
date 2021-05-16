@@ -5,10 +5,10 @@ const puppeteer = require('puppeteer-core')
 exports.handler = builder(async function (event, context) {
   const { template, ...params } = Object.fromEntries(
     event.path
-      .split("/")
-      .filter((p) => p.includes("="))
+      .split('/')
+      .filter(p => p.includes('='))
       .map(decodeURIComponent)
-      .map((s) => s.split("=", 2))
+      .map(s => s.split('=', 2))
   )
 
   const browser = await puppeteer.launch({
@@ -18,7 +18,6 @@ exports.handler = builder(async function (event, context) {
     headless: chromium.headless
   })
 
-  const template = 'talk'
   const htmlPage = (await fs.readFile(require.resolve(`./templates/${template}.html`))).toString()
   for (const k in params) { htmlPage = htmlPage.replace(`{${k}}`, params[k]) }
 
