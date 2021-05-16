@@ -1,6 +1,7 @@
 const { builder } = require('@netlify/functions')
 const chromium = require('chrome-aws-lambda')
 const puppeteer = require('puppeteer-core')
+const fs = require('fs').promises
 
 exports.handler = builder(async function (event, context) {
   const { template, ...params } = Object.fromEntries(
