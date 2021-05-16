@@ -50,7 +50,7 @@ export default {
   head() {
     return {
       meta: [
-          { property: 'og:image', content: `https://lws-io.netlify.app/api/og/template=main/title=About Kevin` }
+          { property: 'og:image', content: `https://lws.io/api/og/template=main/title=About Kevin` }
       ]
     }
   }

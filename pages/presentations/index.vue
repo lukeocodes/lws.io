@@ -19,7 +19,7 @@ export default {
     return {
       title: 'Presentations - Kevin Lewis',
       meta: [
-        { property: 'og:image', content: 'https://lws-io.netlify.app/api/og/template=presentation/title=Presentations' }
+        { property: 'og:image', content: 'https://lws.io/api/og/template=presentation/title=Presentations' }
       ]
     }
   }

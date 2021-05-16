@@ -19,7 +19,7 @@ export default {
     return {
       title: 'Articles - Kevin Lewis',
       meta: [
-        { property: 'og:image', content: 'https://lws-io.netlify.app/api/og/template=article/title=Articles' }
+        { property: 'og:image', content: 'https://lws.io/api/og/template=article/title=Articles' }
       ]
     }
   }

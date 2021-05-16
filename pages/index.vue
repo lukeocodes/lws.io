@@ -19,7 +19,7 @@ export default {
   head () {
     return {
       meta: [
-        { property: 'og:image', content: 'https://lws-io.netlify.app/api/og/template=main/title=Kevin Lewis - Developer Advocate & Event Organizer' }
+        { property: 'og:image', content: 'https://lws.io/api/og/template=main/title=Kevin Lewis - Developer Advocate & Event Organizer' }
       ]
     }
   }
