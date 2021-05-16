@@ -19,7 +19,7 @@ exports.handler = builder(async function (event, context) {
     headless: chromium.headless
   })
 
-  const htmlPage = (await fs.readFile(require.resolve(`./templates/${template}.html`))).toString()
+  let htmlPage = (await fs.readFile(require.resolve(`./templates/${template}.html`))).toString()
   for (const k in params) { htmlPage = htmlPage.replace(`{${k}}`, params[k]) }
 
   const page = await browser.newPage()
