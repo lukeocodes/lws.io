@@ -1,8 +1,52 @@
-<style>
-    h1 { color: green }
-</style>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 1200px;
+            height: 630px;
+            border: 1px solid black;
+            background: linear-gradient(135deg, rgba(49,196,141,1) 0%, rgba(22,116,105,1) 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif;
+            padding: 100px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            width: 100%;
+            font-size: 4em;
+        }
+        mark {
+            color:rgb(49, 196, 141);
+            background-color: white;
+        }
+        footer {
+            width: 100%;
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+        }
+        img {
+            height: 150px;
+            margin: 0 50px;
+        }
+    </style>
+</head>
 
 <body>
-<h1>{title}</h1>
-<p>{description}</p>
+<h1>
+    <mark>{title}</mark>
+</h1>
+<footer>
+    <span>@_phzn</span>
+    <img src="https://lws-io.netlify.app/images/avatar-transparent.png">
+    <span>lws.io</span>
+</footer>
 </body>
