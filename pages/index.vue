@@ -1,8 +1,8 @@
 <template>
   <div class="pb-1">
     <hero />
-    <div class="grid md:grid-cols-2 gap-8 md:gap-4 mb-12 md:mb-24">
-      <latest-articles :articles="articles" />
+    <div class="md:grid md:grid-cols-2 md:gap-8 mb-12 md:mb-24">
+      <latest-articles :articles="articles" class="mb-8 md:mb-0" />
       <latest-presentations :presentations="presentations" />
     </div>
     <you-got-this />

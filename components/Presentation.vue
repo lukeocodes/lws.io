@@ -1,6 +1,6 @@
 <template>
   <n-link :to="presentation.path" class="block border-b text-gray-600" :class="{'py-8': !slim, 'py-4': slim}">
-    <h2 class="text-green-400 capitalize" :class="{'mb-4 text-lg': !slim, 'mb-2 text-sm w-full truncate': slim}">
+    <h2 class="text-green-400 capitalize" :class="{'mb-4 text-lg': !slim, 'mb-2 text-sm w-full md:truncate': slim}">
       {{ presentation.title }}
     </h2>
     <p v-if="!slim" class="mb-6">

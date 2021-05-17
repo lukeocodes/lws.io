@@ -13,7 +13,7 @@
         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
       </svg>
     </nav>
-    <nav :class="{'hidden': !menu}" class="bg-gray-200 px-4 py-2 mx-4 mt-4 mb-2 md:hidden">
+    <nav :class="{'hidden': !menu}" class="mx-4 my-2 md:hidden">
       <n-link v-for="link in nav" :key="link.path" :to="link.path" class="block py-2">
         {{ link.display }}
       </n-link>

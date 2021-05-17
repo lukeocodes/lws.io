@@ -1,6 +1,6 @@
 <template>
   <a :href="article.redirect || article.path" class="block border-b text-gray-600" :class="{'py-8': !slim, 'py-4': slim}">
-    <h2 class="text-blue-400 capitalize" :class="{'mb-4 text-lg': !slim, 'mb-2 text-sm w-full truncate': slim}">
+    <h2 class="text-blue-400 capitalize" :class="{'mb-4 text-lg': !slim, 'mb-2 text-sm w-full md:truncate': slim}">
       {{ article.title }}
     </h2>
     <p v-if="article.description && !slim" class="mb-6">
